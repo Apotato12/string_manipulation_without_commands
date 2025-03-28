@@ -14,4 +14,4 @@ def ends_with():
         else:
             print("The string does not end with the specified suffix.")
 
-eInds_with()
+ends_with()
