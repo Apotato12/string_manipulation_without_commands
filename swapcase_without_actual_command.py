@@ -1,4 +1,13 @@
-#ask the user to input a sentence
-#check which case is upper and lowercase
-#swap the case of the letters in the sentence
-#print the sentence
+input_string = input("Enter a string: ")
+    
+result = ""
+    
+for char in input_string:
+    if 'a' <= char <= 'z': 
+            result += char.upper() 
+    elif 'A' <= char <= 'Z': 
+            result += char.lower()
+    else:
+            result += char
+
+print("Result:", result)
