@@ -1,4 +1,4 @@
-# Program 8
+# Program 5
 # Atienza, Rein Gabriel
 # BSCPE 1-2
 def ends_with():
