@@ -1,4 +1,7 @@
-#prompt the user to enter a sentence
-#ask the user to enter the width to justify the text
-#add spaces to get the specified width
-#print the text
+input_string = input("Enter a string: ")
+width = int(input("Enter the desired width: "))
+
+fillchar = ' '
+result = fillchar * max(0, width - len(input_string)) + input_string
+
+print("Result:", result)
