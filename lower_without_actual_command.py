@@ -1,4 +1,11 @@
-#prompt the user to enter a sentence
-#check if the senctence has uppercase
-#replace the uppercase with lowercase
-#print the new sentence
+input_string = input("Enter a string: ")
+
+result = ""
+
+for char in input_string:
+        if 'A' <= char <= 'Z':
+            result += chr(ord(char) + 32)
+        else:
+            result += char
+
+print(result)
