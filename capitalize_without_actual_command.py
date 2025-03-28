@@ -1,4 +1,8 @@
-#prompt the user to enter a sentence
-#check if the first letter of the sentence is lowercase and if the other are uppercase
-#if the first letter is lowercase convert it to uppercase and the other to lowercase
-#print the output
+sentence = input("Enter a sentence: ")
+
+if len(sentence) == 0:
+        result = sentence 
+else:
+        result = sentence[0].upper() + sentence[1:].lower()
+
+print("Result:", result)
