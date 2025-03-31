@@ -1,4 +1,12 @@
-#prompt the user to enter a sentence
-#check the sentence for the extra spaces on the right using index
-#return the sentence without the extra spaces
-#print the sentence
+user_input = input("Please enter a string: ")
+
+index = len(user_input) - 1
+
+while index >= 0:
+    if user_input[index] != ' ' :
+        break
+    index -= 1
+
+result = user_input[:index + 1]
+
+print("result: " + result)
