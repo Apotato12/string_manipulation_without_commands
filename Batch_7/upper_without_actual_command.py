@@ -1,5 +1,12 @@
-#prompt the user to input a sentence
-#check if the sentence is capitalized
-#if it is capitalized leave it be
-#if it's not capitalized capitalize it
-#print the new sentence
+user_input = input("Please enter a sentence: ")
+capitalize = ""
+
+for char in user_input:
+        
+    if 'a' <= char <= 'z':
+        capitalize += chr(ord(char) - 32)
+
+    else:
+        capitalize += char
+
+print("Result:" + capitalize)
