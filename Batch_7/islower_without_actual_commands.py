@@ -1,4 +1,9 @@
-#ask the user to enter a sentence
-#check if the characther is lowercase or not
-#if it's not lowercase print "it's not lowercase"
-#otherwise print "it's lowercase"
+user_input = input("Please enter a sentence: ")
+
+for char in user_input:
+        if ('a' <= char <= 'z'):
+            print("all characthers are lowercase.")
+            
+        else:
+            print("all characthers are not lowercase.")
+            break
