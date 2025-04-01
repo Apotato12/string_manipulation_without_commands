@@ -1,6 +1,14 @@
-#propmt the user to enter a sentence
-#ask the user to enter a width
-#check if the amount of spaces is appropriate for the width
-#if no enough spaces add spaces
-#if yes change nothing
-#print the sentence
+user_input = input("Please enter a string: ")
+width = int(input("Please enter the total width: "))
+
+spaces = width - len(user_input)
+
+if spaces > 0:
+        
+        justified_string = ' ' * spaces + user_input
+
+else:
+        
+        justified_string = user_input
+
+print("Justified string:", justified_string)
