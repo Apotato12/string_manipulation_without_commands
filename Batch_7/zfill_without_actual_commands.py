@@ -1,13 +1,21 @@
-user_input = input("Please enter a number: ")
-zero = int(input("Please enter the total number of 0's: "))
+# Program 7
+# Atienza, Rein Gabriel
+# BSPCE 1-2
 
-zeros_needed = zero - len(user_input)
+def zfill():
+    """Adds zero characters at the beginning of the string to reach the specified length without using zfill()."""
+    user_input = input("Please enter a number: ")
+    zero = int(input("Please enter the total number of 0's: "))
 
-if zeros_needed > 0:
+    zeros_needed = zero - len(user_input)
 
-        zero_string = '0' * zeros_needed + user_input
-else:
+    if zeros_needed > 0:
 
-        zero_string = user_input
+            zero_string = '0' * zeros_needed + user_input
+    else:
 
-print("Zero-filled string:", zero_string)
+            zero_string = user_input
+
+    print("Zero-filled string:", zero_string)
+
+zfill()
