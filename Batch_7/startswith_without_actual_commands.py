@@ -1,5 +1,8 @@
-#prompt the user to enter a sentence
-#ask for a word to check if it starts with a certain sentence
-#compare if the word starts with the sentence
-#if it does print "it starts with the word"
-#if not print "it does not start with the word"
+sentence = input("Please enter a string: ")
+word = input("Please enter the word to check: ")
+
+for i in range(len(word)):
+        if sentence[i] != word[i]:
+            print("The string does not start with the specified prefix.")
+        else:
+            print("The string starts with the specified prefix.")
