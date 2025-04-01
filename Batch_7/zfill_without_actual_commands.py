@@ -1,4 +1,13 @@
-#ask the user to enter a number
-#ask the user to enter how many 0 to add
-#add 0 to the left of the number until it reaches the desired amount of 0
-#print the number
+user_input = input("Please enter a number: ")
+zero = int(input("Please enter the total number of 0's: "))
+
+zeros_needed = zero - len(user_input)
+
+if zeros_needed > 0:
+
+        zero_string = '0' * zeros_needed + user_input
+else:
+
+        zero_string = user_input
+
+print("Zero-filled string:", zero_string)
